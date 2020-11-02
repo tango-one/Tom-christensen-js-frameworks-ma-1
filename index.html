@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+            <script "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script "text/javascript" src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+            <title>Level 1 - slider</title>
+        </head>
+
+        <div class="slider">
+            <div><img src="./images/s1.jpg" title="superman logo on wall"></div>
+            <div><img src="./images/s2.jpg" title="superman and supergirl on side of a boat"></div>
+            <div><img src="./images/s3.jpg" title="super hero to the rescue"></div>
+        </div>
+
+        <script>
+            $('.slider').bxSlider({
+                autoControls: false, 
+                auto: true,
+                pager: true,
+                slideWidth: 1500,
+                mode: 'fade',
+                captions: false,
+                speed: 3000
+            });
+        </script>
+    </body>
+</html>
